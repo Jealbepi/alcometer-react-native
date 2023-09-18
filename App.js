@@ -4,7 +4,6 @@ import { DarkStyle, LightStyle} from './Styles/Styles';
 import { ScrollView, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 import NumericInput from 'react-native-numeric-input';
 import { RadioButton, Switch, TextInput } from 'react-native-paper';
-import LinearGradient from 'react-native-linear-gradient';
 
 export default function App() {
   
