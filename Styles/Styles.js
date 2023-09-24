@@ -3,137 +3,240 @@ const { StyleSheet } = require("react-native")
 const DarkStyle = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: '#2e3e76',
-        alignItems: 'center',
-        justifyContent: 'space-evenly',
+        backgroundColor: '#0100335b',
         padding: 50,
-        borderWidth: 5
+        paddingTop: 80,
+    },
+    containerInner: {
+        backgroundColor: '#d6daffff',
+        padding: 15,
+        paddingBottom: 15,
+        borderRadius: 10,
+        shadowColor: "#000000",
+        shadowOffset: {
+            width: 0, 
+            height: 3,
+        },
+        shadowOpacity: 0.20,
+        shadowRadius: 4.60,
+        elevation: 15
+    },
+
+    linearGradient: {
+        flex: 1,
+    },
+
+    mode: {
+        paddingBottom: 0
     },
 
     header: {
-        color: '#faebd7',
-        fontSize: 35,
+        alignSelf: 'center',
+        padding: 10,
+        paddingBottom: 0,
+        color: '#223168',
         fontWeight: 'bold'
     },
 
-    input: {
-        borderWidth: 1,
-        padding: 20,
-        width: 250,
+    header2: {
+        alignSelf: 'center',
+        padding: 10,
+        fontSize: 35,
+        fontWeight: 'bold'
+    },
+    
+    titles: {
+        flexDirection: 'row'
+    },
+    titleBottles: {
+        padding: 10,
+        paddingLeft: 8,
+        fontSize: 22,
+        color: '#223168',
+        fontWeight: 'bold'
+    },
+    titleHours: {
+        padding: 10,
+        paddingLeft: 40,
+        fontSize: 22,
+        color: '#223168',
+        fontWeight: 'bold'
+    },
+    
+    numInput: {
+        flexDirection: 'row',
+        width: 200,
         borderRadius: 10,
-        color: '#faebd7',
-        borderColor: '#faebd7',
-        fontSize: 18
+        color: '#223168',
+        borderColor: '#223168'
     },
-
-    title: {
-        fontSize: 25,
-        fontWeight: 'bold',
-        color: '#faebd7'
+    numInputBottles: {
+        paddingBottom: 15,
     },
-
-    borderColor: '#faebd7',
-
+    numInputHours: {
+        paddingLeft: 9,
+    },
+    
+    borderColor: '#223168',
+    
     icon: {
-        color: '#2e3a76'
+        color: '#223168',
     },
-
-    upDownButtonsBackgroundColor: '#faebd7',
-
+    
+    color1: '#223168',
+    
     radioButtonsGroup: {
+        paddingTop: 0,
         flexDirection: 'row',
         alignItems: 'center'
     },
+    
+    uncheckedColor: '#223168',
+    
+    TextInput: {
+        backgroundColor: '#ced2ffff',
+    },
 
-    uncheckedColor: '#faebd7',
-
-    color: '#faebd7',
-
-    colorWeight: '#1f1f1f',
-
-    trackColor: '#faebd7a3',
-
+    colorWeight: '#223168',
+    
+    trackColorTrue: '#2e3e76',
+    
     radioTitle: {
-        fontSize:22, color: '#faebd7'
+        fontSize: 20,
+        fontWeight: '500',
+        color: '#223168'
     },
 
     calculate: {
+        alignSelf: 'center',
         fontSize: 22,
         fontWeight: 'bold',
-        color: '#2e3a76',
-        backgroundColor: '#faebd7',
+        color: '#ffffff',
+        backgroundColor: '#223168',
         borderRadius: 10,
-        padding: 50,
-        paddingTop: 20,
-        paddingBottom: 20
+        padding: 40,
+        paddingTop: 10,
+        paddingBottom: 10
     }
 })
 
 const LightStyle = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: '#faebd7',
-        alignItems: 'center',
-        justifyContent: 'space-evenly',
-        padding: 20
+        backgroundColor: '#63000018',
+        padding: 50,
+        paddingTop: 80,
+    },
+    containerInner: {
+        backgroundColor: '#ffffff',
+        padding: 15,
+        paddingBottom: 15,
+        borderRadius: 10,
+        shadowColor: "#000000",
+        shadowOffset: {
+            width: 0, 
+            height: 3,
+        },
+        shadowOpacity: 0.20,
+        shadowRadius: 4.60,
+        elevation: 15
+    },
+
+    linearGradient: {
+        flex: 1,
+    },
+
+    mode: {
+        paddingBottom: 0
     },
 
     header: {
+        alignSelf: 'center',
+        padding: 10,
+        paddingBottom: 0,
+        color: '#2e3e76',
+        fontWeight: 'bold'
+    },
+
+    header2: {
+        alignSelf: 'center',
+        padding: 10,
         color: '#2e3e76',
         fontSize: 35,
         fontWeight: 'bold'
     },
 
-    input: {
-        borderWidth: 1,
-        padding: 20,
-        width: 250,
-        borderRadius: 10,
-        color: '#2e3e76',
-        borderColor: '#2e3e76',
-        fontSize: 18
+    TextInput: {
+
     },
 
-    title: {
-        fontSize: 25,
-        fontWeight: 'bold',
-        color: '#2e3e76'
+    titles: {
+        flexDirection: 'row'
+    },
+    titleBottles: {
+        padding: 10,
+        paddingLeft: 8,
+        fontSize: 22,
+        color: '#2e3e76',
+        fontWeight: 'bold'
+    },
+    titleHours: {
+        padding: 10,
+        paddingLeft: 40,
+        fontSize: 22,
+        color: '#2e3e76',
+        fontWeight: 'bold'
+    },
+  
+    numInput: {
+        flexDirection: 'row',
+        width: 200,
+        borderRadius: 10,
+        color: '#2e3e76',
+        borderColor: '#2e3e76'
+    },
+    numInputBottles: {
+        paddingBottom: 15,
+    },
+    numInputHours: {
+        paddingLeft: 9
     },
 
     borderColor: '#2e3e76',
 
     icon: {
-        color: '#faebd7'
+        color: '#2e3e76',
     },
-
-    upDownButtonsBackgroundColor: '#2e3e76',
+    color: '#2e3e76',
 
     radioButtonsGroup: {
+        paddingTop: 0,
         flexDirection: 'row',
         alignItems: 'center'
     },
 
     uncheckedColor: '#2e3e76',
 
-    color: '#2e3e76',
-
     colorWeight: '#1f1f1f',
 
     trackColor: '#2e3e76',
 
     radioTitle: {
-        fontSize:22, color: '#2e3e76'
+        fontSize: 20,
+        fontWeight: '500',
+        color: '#2e3e76'
     },
 
     calculate: {
+        alignSelf: 'center',
         fontSize: 22,
         fontWeight: 'bold',
-        color: '#faebd7',
+        color: '#ffffff',
         backgroundColor: '#2e3e76',
         borderRadius: 10,
-        padding: 50,
-        paddingTop: 20,
-        paddingBottom: 20
+        padding: 40,
+        paddingTop: 10,
+        paddingBottom: 10
     }
 })
 
